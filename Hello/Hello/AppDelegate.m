@@ -1,14 +1,14 @@
 //
-//  RZAppDelegate.m
-//  HelloWorld
+//  AppDelegate.m
+//  Hello
 //
 //  Created by Harvey on 14-7-16.
 //  Copyright (c) 2014年 iwise. All rights reserved.
 //
 
-#import "RZAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation RZAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

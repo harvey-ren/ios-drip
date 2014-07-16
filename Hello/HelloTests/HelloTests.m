@@ -1,6 +1,6 @@
 //
-//  HelloWorldTests.m
-//  HelloWorldTests
+//  HelloTests.m
+//  HelloTests
 //
 //  Created by Harvey on 14-7-16.
 //  Copyright (c) 2014年 iwise. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface HelloWorldTests : XCTestCase
+@interface HelloTests : XCTestCase
 
 @end
 
-@implementation HelloWorldTests
+@implementation HelloTests
 
 - (void)setUp
 {
