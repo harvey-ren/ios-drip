@@ -18,9 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    webView =[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, 460)];
+    webView =[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, 480)];
+    webView.scalesPageToFit = YES;
     [webView setDelegate:self];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.so.com"]];
     [self.view addSubview:webView];
     [webView loadRequest:request];
 }
@@ -29,8 +30,8 @@
 {
     NSLog(@"开始加载");
     UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    activity.frame =CGRectMake(0, 0, 100, 100);
-    activity.tag=101;
+    activity.frame =CGRectMake(0, 0, 32.0f, 32.0f);
+    activity.tag=100;
     activity.center = self.view.center;
     [self.view addSubview:activity];
     [activity startAnimating];
@@ -38,7 +39,7 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
     //通过全局变量来获取控件
-    UIActivityIndicatorView * activity=(UIActivityIndicatorView *)[self.view viewWithTag:101];
+    UIActivityIndicatorView * activity=(UIActivityIndicatorView *)[self.view viewWithTag:100];
     [activity stopAnimating];
     NSLog(@"加载完成");
 }
