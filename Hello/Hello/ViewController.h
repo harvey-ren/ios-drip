@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController<UIWebViewDelegate>
 {
     UIWebView *webView;
+    UIActivityIndicatorView *activityIndicatorView;
 }
 
 @end
